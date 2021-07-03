@@ -4,32 +4,29 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: '主題式學習',
     Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Leetcode 題目這麼多，要從何寫起比較好？我們挑選了一些學習演算法與資料結構常見的主題，並且提供許多搭配的練習題目。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '利用 Follow-Ups 加深加廣',
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        要如何評估自己的學習效果？利用舉一反三的 Follow-Ups 了解每一道題目與其他題目的關聯，方能更快建立自己的知識網路！
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '刷出興趣與樂趣',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        刷題如同解謎一般，不應該是痛苦的事情！希望大家看過我們刷題指南以後，可以更快樂地體驗寫程式解題的樂趣～
       </>
     ),
   },
