@@ -62,3 +62,42 @@ public:
   }
 };
 ```
+
+有興趣的朋友們可以證明看看，上面這個方法的時間複雜度是 $\Theta(n)$ 的，在 $n$ 很大的時候，跑起來仍然很花時間。
+
+### 演算法 3：利用雙指標方法
+
+當我們從 $L$ 推到 $L+1$ 的時候，可以想像 $R$ 的變化也不應該太過於劇烈。也就是說，每一次讓 $R$ 從 $L$ 重新開始跑的時候，可能會浪費很多時間。因此，我們可以同時記錄 $L$ 和當前找到的 $R$ 值，當 $L$ 增加的時候，只要將 $R$ 微調即可。
+
+```cpp
+class Solution {
+public:
+  int consecutiveNumbersSum(int n) {
+    int ways = 0;
+    int L = 1, R = 1, sum = 0;
+    while (L <= n) {
+      while (sum + R <= n) {
+        sum += R;
+        R++;
+      }
+      if (sum == n)
+        ways++;
+      int skip = max(1, (n - sum) / (R - L));
+      if (R <= L + skip) {
+        sum = 0;
+        L += skip;
+        R = L;
+      } else {
+        while (skip > 0) {
+          sum -= L;
+          L++;
+          skip--;
+        }
+      }
+    }
+    return ways;
+  }
+};
+```
+
+有興趣的朋友們可以證明看看，上面這個方法的時間複雜度是 $\Theta(\sqrt{n})$ 的。

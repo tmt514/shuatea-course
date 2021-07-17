@@ -6,7 +6,7 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: '刷題刷起來',
-  tagline: '從刷題學習演算法與資料結構',
+  tagline: '軟工面試必備：用十種不同的計算思維渡過演算法面試',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
