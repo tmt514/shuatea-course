@@ -13,10 +13,10 @@ sidebar_position: 1
 
 ## 經典範例
 
-* 1.1 排序問題與快速排序法 Quicksort
-* 1.2 尋找第 $k$ 小的數 Selection
-* 1.3 合併排序法 Merge Sort
-* 1.4 逆序數對 Inversion Pairs
+* 1.1 [排序問題與快速排序法 Quicksort](quicksort.md)
+* 1.2 [尋找第 $k$ 小的數 Selection](quickselect.md)
+* 1.3 [合併排序法 Merge Sort](mergesort.md)
+* 1.4 [逆序數對 Inversion Pairs](inversion.md)
 
 ## 實戰練習
 

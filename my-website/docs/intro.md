@@ -25,3 +25,5 @@ sidebar_position: 1
 此外，在很多現實的應用中，我們並不要求一個演算法在任意時刻都必須是最有效率的。透過[引入亂數與隨機變數的解題思維](unit09-randomized-algorithms)，利用簡單的隨機演算法，可以大幅減少寫程式的力氣和除錯的時間，但又不會犧牲絕大多數時候的演算法效率或正確性。最後，想對付一些資訊理論中相當困難的問題，難以設計找出精確的最佳解、同時又很有效率的演算法時，採用[近似演算法與各種貪求思維](unit10-approximate-algorithms)也會是一些不錯的選擇。
 
 ---- 卡卡嗯 2021.07.26
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg)
