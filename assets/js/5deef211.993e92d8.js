@@ -1,0 +1,1 @@
+(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[776],{9424:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/shuatea-course/blog/tags","slug":"hola","name":"hola","count":1,"permalink":"/shuatea-course/blog/tags/hola"}')}}]);
