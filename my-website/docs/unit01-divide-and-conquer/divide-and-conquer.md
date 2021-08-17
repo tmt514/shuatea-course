@@ -22,7 +22,7 @@ sidebar_label: "🟦 分而治之 Divide and Conquer"
 ## 實戰練習
 
 ★☆☆ [Leetcode 4. Median of Two Sorted Arrays](lc4.md) [原題連結](https://leetcode.com/problems/median-of-two-sorted-arrays/)  
-★☆☆ Leetcode 493. Reverse Pairs [原題連結](https://leetcode.com/problems/reverse-pairs/)  
+★☆☆ [Leetcode 493. Reverse Pairs](lc493.md) [原題連結](https://leetcode.com/problems/reverse-pairs/)  
 ★★☆ Leetcode 218. The Skyline Problem [原題連結](https://leetcode.com/problems/the-skyline-problem/)  
 ★★☆ Leetcode 1643. Kth Smallest Instructions [原題連結](https://leetcode.com/problems/kth-smallest-instructions/)  
 ★★★ Leetcode 1649. Create Sorted Array through Instructions [原題連結](https://leetcode.com/problems/create-sorted-array-through-instructions/)  
