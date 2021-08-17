@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+sidebar_label: "🟦 分而治之 Divide and Conquer"
 ---
 
 
@@ -16,11 +17,11 @@ sidebar_position: 1
 * 1.1 [排序問題與快速排序法 Quicksort](quicksort.md)
 * 1.2 [尋找第 $k$ 小的數 Selection](quickselect.md)
 * 1.3 [合併排序法 Merge Sort](mergesort.md)
-* 1.4 [逆序數對 Inversion Pairs](inversion.md)
+* 1.4 [逆序數對 Inversions](inversions.md)
 
 ## 實戰練習
 
-★☆☆ Leetcode 4. Median of Two Sorted Arrays [原題連結](https://leetcode.com/problems/median-of-two-sorted-arrays/)  
+★☆☆ [Leetcode 4. Median of Two Sorted Arrays](lc4.md) [原題連結](https://leetcode.com/problems/median-of-two-sorted-arrays/)  
 ★☆☆ Leetcode 493. Reverse Pairs [原題連結](https://leetcode.com/problems/reverse-pairs/)  
 ★★☆ Leetcode 218. The Skyline Problem [原題連結](https://leetcode.com/problems/the-skyline-problem/)  
 ★★☆ Leetcode 1643. Kth Smallest Instructions [原題連結](https://leetcode.com/problems/kth-smallest-instructions/)  

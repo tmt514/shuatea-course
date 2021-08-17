@@ -1,5 +1,6 @@
 ---
 sidebar_position: 11
+sidebar_label: "🟨 快速排序法 Quicksort"
 ---
 
 # 排序問題與快速排序法 Quicksort

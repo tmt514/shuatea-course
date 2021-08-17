@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+sidebar_label: "🟦 位元運算 Bitwise Operators"
+---
+
 # 位元運算 Bitwise Operators
 
 :::tip 核心觀念

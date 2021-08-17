@@ -7,13 +7,13 @@ const katex = require('rehype-katex');
 module.exports = {
   title: '刷題刷起來',
   tagline: '軟工面試必備：用十種不同的計算思維渡過演算法面試',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
+  url: 'https://tmt514.github.io',
+  baseUrl: '/shuatea-course/',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'tmt514', // Usually your GitHub org/user name.
+  projectName: 'shuatea-course', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'ShuaTea',
@@ -30,7 +30,7 @@ module.exports = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/tmt514/shuatea-course',
           label: 'GitHub',
           position: 'right',
         },
@@ -74,7 +74,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/tmt514/shuatea-course',
             },
           ],
         },

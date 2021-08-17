@@ -1,5 +1,6 @@
 ---
 sidebar_position: 12
+sidebar_label: "🟨 第 k 小的數 Selection"
 ---
 
 # 尋找第 k 小的數 Selection

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 13
+sidebar_label: "🟨 合併排序法 Mergesort"
 ---
 
 # 合併排序法 Mergesort
@@ -19,7 +20,17 @@ sidebar_position: 13
 
 ```cpp
 void combine(int A[], int l, int mid, int r) {
-  static int tmp[];
+  int *tmp = new int[r - l + 1];
+  int i = l, j = mid, k = 0;
+  while (i < mid || j <= r) {
+    if (j > r || (i < mid && A[i] <= A[j])) {
+      tmp[k++] = A[i++];
+    } else {
+      tmp[k++] = A[j++];
+    }
+  }
+  for (int i = l; i <= r; i++) A[i] = tmp[i - l];
+  delete[] tmp;
 }
 
 void mergesort_impl(int A[], int l, int r) {
