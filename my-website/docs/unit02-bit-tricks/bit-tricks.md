@@ -12,9 +12,22 @@ sidebar_label: "🟦 位元運算 Bitwise Operators"
 
 CPU 內部的計算單元，往往是以字組（Word）為單位。目前常見的計算機結構中，可能是 32-位元、或是 64-位元的電腦。而這也就意味著每一個單位時間，CPU 可以運送、或是針對若干 64-位元 的字組進行計算。如果我們想要計算的東西不足 64-位元的時候，透過常見的位元運算技巧，我們可以爭取更多的計算資源。
 
+## 常見的位元運算指令
+
+這些指令通常是 CPU 支援的。關於指令集的資料可以在[維基百科](https://zh.wikipedia.org/wiki/%E6%8C%87%E4%BB%A4%E9%9B%86%E6%9E%B6%E6%A7%8B)找到。在這邊我們考慮的是以下常見的位元運算與算數運算指令：
+
+* 位元且 (Bitwise AND)
+* 位元或 (Bitwise OR)
+* 位元異或 (Bitwise XOR)
+* 位元反轉 (invert)
+* 位元右移/左移 (Shift right/Shift left)
+* 加減計算
+
+乘法與除法比較特殊，在計算由於比較花時間，是否在一個演算法中被使用到，通常會被分開提及。一般來說，如果去查看 CPU 的資料表（比方說[這裡](https://www.agner.org/optimize/instruction_tables.pdf)），上面也都會標註進行該指令所需要的延遲時間（單位是 cycle）。
+
 ## 經典範例
 
-* 2.1 [找出 LSB 最低有效位元](lsb.md)
+* 2.1 [找出 LSB 最低有效位元](./lsb)
 * 2.2 枚舉所有子集合
 * 2.3 計算 1-位元的數量 [Leetcode 191 題目連結](https://leetcode.com/problems/number-of-1-bits/)
 * 2.4 Fenwick 樹（Binary Indexed Tree, BIT）

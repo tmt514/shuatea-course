@@ -1,29 +1,61 @@
+typedef vector<vector<int>> Skyline;
+
 class Solution {
  public:
-  int count;
-
-  void combine(vector<int>& nums, int l, int m, int r) {
-    for (int i = l, j = m; i < m; i++) {
-      while (j <= r && nums[i] > 2LL * nums[j]) ++j;
-      count += j - m;
+  vector<Skyline> convertToSkylines(vector<vector<int>>& buildings) {
+    vector<Skyline> skylines;
+    for (auto& b : buildings) {
+      skylines.push_back({{b[0], b[2]}, {b[1], 0}});
     }
-    vector<int> tmp(r - l + 1);
-    std::merge(nums.begin() + l, nums.begin() + m, nums.begin() + m,
-               nums.begin() + r + 1, tmp.begin());
-    std::copy(tmp.begin(), tmp.end(), nums.begin() + l);
+    return skylines;
   }
 
-  void mergesort(vector<int>& nums, int l, int r) {
-    if (l >= r) return;
-    int m = (l + r) / 2;
-    mergesort(nums, l, m);
-    mergesort(nums, m + 1, r);
-    combine(nums, l, m + 1, r);
+  Skyline merge(Skyline& l, Skyline& r) {
+    Skyline result;
+    int i = 0, j = 0;
+    int prevLeftHeight = 0, prevRightHeight = 0;
+    auto add = [&](int x, int y) {
+      if (result.empty() || result.back()[1] != y) {
+        result.push_back({x, y});
+      }
+    };
+    while (i < l.size() && j < r.size()) {
+      if (l[i][0] == r[j][0]) {
+        add(l[i][0], max(l[i][1], r[j][1]));
+        prevLeftHeight = l[i++][1];
+        prevRightHeight = r[j++][1];
+      } else if (l[i][0] < r[j][0]) {
+        add(l[i][0], max(l[i][1], prevRightHeight));
+        prevLeftHeight = l[i++][1];
+      } else {
+        add(r[j][0], max(prevLeftHeight, r[j][1]));
+        prevRightHeight = r[j++][1];
+      }
+    }
+    while (i < l.size()) {
+      add(l[i][0], l[i][1]);
+      i++;
+    }
+    while (j < r.size()) {
+      add(r[j][0], r[j][1]);
+      j++;
+    }
+    return result;
   }
 
-  int reversePairs(vector<int>& nums) {
-    count = 0;
-    mergesort(nums, 0, nums.size() - 1);
-    return count;
+  Skyline mergeSkylines(vector<Skyline>& skylines) {
+    if (skylines.size() == 1) return skylines[0];
+    int m = skylines.size() / 2;
+    vector<Skyline> left(skylines.begin(), skylines.begin() + m);
+    vector<Skyline> right(skylines.begin() + m, skylines.end());
+    auto l = mergeSkylines(left);
+    auto r = mergeSkylines(right);
+    return merge(l, r);
+  }
+
+  vector<vector<int>> getSkyline(vector<vector<int>>& buildings) {
+    vector<Skyline> skylines = convertToSkylines(buildings);
+    Skyline skyline = mergeSkylines(skylines);
+    return skyline;
   }
 };
