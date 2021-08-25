@@ -28,8 +28,8 @@ CPU 內部的計算單元，往往是以字組（Word）為單位。目前常見
 ## 經典範例
 
 * 2.1 [找出 LSB 最低有效位元](./lsb)
-* 2.2 枚舉所有子集合
-* 2.3 計算 1-位元的數量 [Leetcode 191 題目連結](https://leetcode.com/problems/number-of-1-bits/)
+* 2.2 [枚舉所有子集合](./enumerate-all-subsets)
+* 2.3 [計算有效位元的數量](./number-of-1-bits) [Leetcode 191 題目連結](https://leetcode.com/problems/number-of-1-bits/)
 * 2.4 Fenwick 樹（Binary Indexed Tree, BIT）
 * 2.5 X-Fast 樹
 
@@ -52,3 +52,8 @@ CPU 內部的計算單元，往往是以字組（Word）為單位。目前常見
 * 轉置一個位元矩陣
 * 找出 MSB 最高 1-位元
 * 浮點數的黑魔法
+
+## 參考資料
+
+* 更多的位元計算技巧 [The Aggregate Magic Algorithms](http://aggregate.org/MAGIC/)
+* 《Hacker's Delight》這本書，作者是 Henry S. Warren Jr。
