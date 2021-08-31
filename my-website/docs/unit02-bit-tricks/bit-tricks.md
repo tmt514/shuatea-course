@@ -30,7 +30,7 @@ CPU 內部的計算單元，往往是以字組（Word）為單位。目前常見
 * 2.1 [找出 LSB 最低有效位元](./lsb)
 * 2.2 [枚舉所有子集合](./enumerate-all-subsets)
 * 2.3 [計算有效位元的數量](./number-of-1-bits) [Leetcode 191 題目連結](https://leetcode.com/problems/number-of-1-bits/)
-* 2.4 Fenwick 樹（Binary Indexed Tree, BIT）
+* 2.4 [Fenwick 樹](./fenwick-tree)（Binary Indexed Tree, BIT）
 * 2.5 X-Fast 樹
 
 

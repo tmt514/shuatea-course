@@ -42,3 +42,7 @@ int popcount(uint32_t x) {
   return x;
 }
 ```
+
+## 備註
+
+* [Leetcode 191 題目連結](https://leetcode.com/problems/number-of-1-bits/)
