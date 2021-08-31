@@ -14,6 +14,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'tmt514', // Usually your GitHub org/user name.
   projectName: 'shuatea-course', // Usually your repo name.
+//   plugins: ['@docusaurus/plugin-google-gtag'],
   themeConfig: {
     navbar: {
       title: 'ShuaTea',
@@ -84,6 +85,9 @@ module.exports = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+    },
+    gtag: {
+      trackingID: 'G-96GDCGKY7Z',
     },
   },
   presets: [
